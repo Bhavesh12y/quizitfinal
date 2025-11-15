@@ -1,0 +1,82 @@
+[
+  {
+    "text": "What is the chemical symbol for Oxygen?",
+    "options": ["Oy", "O2", "Ox", "O"],
+    "correctAnswer": "O"
+  },
+  {
+    "text": "What table organizes all known elements?",
+    "options": [
+      "The Chemistry List",
+      "The Molecule Table",
+      "The Periodic Table",
+      "The Elemental Chart"
+    ],
+    "correctAnswer": "The Periodic Table"
+  },
+  {
+    "text": "What is the most abundant gas in Earth's atmosphere?",
+    "options": [
+      "Oxygen (O2)",
+      "Carbon Dioxide (CO2)",
+      "Nitrogen (N2)",
+      "Argon (Ar)"
+    ],
+    "correctAnswer": "Nitrogen (N2)"
+  },
+  {
+    "text": "What is the pH of pure water?",
+    "options": [
+      "14 (Very Basic)",
+      "1 (Acidic)",
+      "7 (Neutral)",
+      "0 (Very Acidic)"
+    ],
+    "correctAnswer": "7 (Neutral)"
+  },
+  {
+    "text": "What is the chemical symbol for Sodium (table salt)?",
+    "options": ["S", "Na", "So", "Sa"],
+    "correctAnswer": "Na"
+  },
+  {
+    "text": "What is CO2 the chemical formula for?",
+    "options": [
+      "Carbon Monoxide",
+      "Water",
+      "Oxygen",
+      "Carbon Dioxide"
+    ],
+    "correctAnswer": "Carbon Dioxide"
+  },
+  {
+    "text": "What is formed when two or more atoms join together?",
+    "options": [
+      "A proton",
+      "A molecule",
+      "An element",
+      "A nucleus"
+    ],
+    "correctAnswer": "A molecule"
+  },
+  {
+    "text": "What subatomic particles are found in the nucleus of an atom?",
+    "options": [
+      "Electrons and Protons",
+      "Protons and Neutrons",
+      "Only Electrons",
+      "Only Neutrons"
+    ],
+    "correctAnswer": "Protons and Neutrons"
+  },
+  {
+    "text": "What is 'NaCl'?",
+    "options": ["Water", "Sugar", "Vinegar", "Table Salt"],
+    "correctAnswer": "Table Salt"
+  },
+  {
+    "text": "A substance with a pH less than 7 is called...",
+    "options": ["Neutral", "A salt", "A base", "An acid"],
+    "correctAnswer": "An acid"
+  }
+]

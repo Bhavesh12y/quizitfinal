@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Instructions</title>
+    <link rel="stylesheet" href="/css/quizinstru.css">
+    <script src="/js/quizintruc.js" defer></script>
+</head>
+<body>
+    <div class="instruction-container">
+        <div class="instruction-header">
+            <img src="/img/newmainimg.png" alt="Quiz It Logo" class="quizit-logo" style="width: 90px; height: auto; margin-bottom: 12px;">
+            <h1 class="instruction-title">Quiz Instructions</h1>
+            <div class="instruction-meta">
+                <span class="meta-item"><strong>Category:</strong> 
+                    <span id="quiz-category">Loading...</span>
+                </span>
+                <span class="meta-item"><strong>Time Limit:</strong> <span id="quiz-time">30 seconds</span></span>
+                <span class="meta-item"><strong>Total Questions:</strong> <span id="quiz-questions">10</span>
+            </div>
+        </div>
+        <div class="instruction-list">
+            <ul>
+                <li>Read each question carefully before answering.</li>
+                <li>Each question has only one correct answer.</li>
+                <li>You can skip questions and return to them later.</li>
+                <li>Use the timer to manage your time efficiently.</li>
+                <li>Scores are based on correct answers. No negative marking.</li>
+                <li>Once submitted, answers cannot be changed.</li>
+                <li>Leaderboard ranks are updated after quiz completion.</li>
+            </ul>
+        </div>
+        <div class="instruction-actions">
+            <button id="start-quiz-btn" class="start-quiz-btn">Start Quiz</button>
+            <button class="start-quiz-btn" onclick="window.location.href='/'" style="margin-left: 18px; background: #38406b;">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>

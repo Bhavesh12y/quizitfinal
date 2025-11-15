@@ -1,0 +1,57 @@
+[
+  {
+    "text": "What is 12 x 12?",
+    "options": ["134", "144", "124", "148"],
+    "correctAnswer": "144"
+  },
+  {
+    "text": "What is the value of Pi (to 2 decimal places)?",
+    "options": ["3.12", "3.16", "3.14", "3.18"],
+    "correctAnswer": "3.14"
+  },
+  {
+    "text": "What is the sum of the angles in a triangle?",
+    "options": [
+      "120 degrees",
+      "360 degrees",
+      "90 degrees",
+      "180 degrees"
+    ],
+    "correctAnswer": "180 degrees"
+  },
+  {
+    "text": "How many sides does a hexagon have?",
+    "options": ["5", "7", "6", "8"],
+    "correctAnswer": "6"
+  },
+  {
+    "text": "What is the square root of 81?",
+    "options": ["10", "7", "8", "9"],
+    "correctAnswer": "9"
+  },
+  {
+    "text": "What is 7 * 8?",
+    "options": ["54", "56", "49", "63"],
+    "correctAnswer": "56"
+  },
+  {
+    "text": "What is 100 divided by 4?",
+    "options": ["25", "50", "20", "30"],
+    "correctAnswer": "25"
+  },
+  {
+    "text": "What is the next prime number after 7?",
+    "options": ["13", "9", "10", "11"],
+    "correctAnswer": "11"
+  },
+  {
+    "text": "What is the area of a rectangle with length 5 and width 4?",
+    "options": ["20", "25", "9", "18"],
+    "correctAnswer": "20"
+  },
+  {
+    "text": "If x + 5 = 15, what is x?",
+    "options": ["20", "5", "10", "15"],
+    "correctAnswer": "10"
+  }
+]

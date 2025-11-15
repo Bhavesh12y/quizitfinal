@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ REPORT</title>
+    <link rel="stylesheet" href="/css/report.css">
+    <script src="/js/report.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="report-container">
+       <a href="/"><div class="report-header">
+            <span class="report-title">QUIZ -IT</span>
+        </div></a> 
+        <div class="report-main-title">QUIZ REPORT</div>
+        
+        <div class="report-meta-row">
+            <div class="report-meta" id="report-date">Date</div>
+            <div class="report-meta" id="report-time">Time</div>
+            <div class="report-meta" id="report-category">Category</div>
+            <div class="report-meta" id="report-score">Score</div>
+        </div>
+        
+        <div class="report-content-flex">
+            <div class="report-solutions-block">
+                <h3 class="report-solutions-title">Solutions:</h3>
+                <div class="report-solutions-list" id="solutions-list">
+                    </div>
+            </div>
+            
+            <div class="report-stats-block">
+                <h3 class="report-stats-title">Your Stats:</h3>
+                <p class="report-stats-item">
+                    Correct Answers: 
+                    <span id="correct-count" class="stat-correct">0</span>
+                </p>
+                <p class="report-stats-item">
+                    Wrong Answers: 
+                    <span id="wrong-count" class="stat-wrong">0</span>
+                </p>
+                <p class="report-stats-item">
+                    Skipped Questions: 
+                    <span id="skipped-count" class="stat-skipped">0</span>
+                </p>
+            </div>
+            </div>
+        
+        <footer class="report-footer">
+            <span class="footer-title">QUIZ IT :</span> ALL RIGHTS ARE RESERVED
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+[
+  {
+    "text": "When did World War I begin?",
+    "options": [
+      "1914",
+      "1918",
+      "1939",
+      "1905"
+    ],
+    "correctAnswer": "1914"
+  },
+  {
+    "text": "When did World War II end?",
+    "options": [
+      "1945",
+      "1939",
+      "1918",
+      "1950"
+    ],
+    "correctAnswer": "1945"
+  },
+  {
+    "text": "Who was the first person to step on the moon?",
+    "options": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Michael Collins"
+    ],
+    "correctAnswer": "Neil Armstrong"
+  },
+  {
+    "text": "In which year did the Titanic sink?",
+    "options": [
+      "1912",
+      "1905",
+      "1915",
+      "1920"
+    ],
+    "correctAnswer": "1912"
+  },
+  {
+    "text": "Who invented the printing press?",
+    "options": [
+      "Johannes Gutenberg",
+      "Leonardo da Vinci",
+      "Galileo Galilei",
+      "Isaac Newton"
+    ],
+    "correctAnswer": "Johannes Gutenberg"
+  },
+  {
+    "text": "When did the United States declare independence?",
+    "options": [
+      "1776",
+      "1789",
+      "1800",
+      "1765"
+    ],
+    "correctAnswer": "1776"
+  },
+  {
+    "text": "The 'Renaissance' was a 'rebirth' of what?",
+    "options": [
+      "Art and Learning",
+      "Warfare",
+      "Religion",
+      "Agriculture"
+    ],
+    "correctAnswer": "Art and Learning"
+  },
+  {
+    "text": "Who was the first President of the United States?",
+    "options": [
+      "George Washington",
+      "Thomas Jefferson",
+      "Abraham Lincoln",
+      "John Adams"
+    ],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "text": "What was the 'Cold War'?",
+    "options": [
+      "A period of tension between the US and Soviet Union",
+      "A war fought in Antarctica",
+      "A war fought in winter",
+      "A war over computer technology"
+    ],
+    "correctAnswer": "A period of tension between the US and Soviet Union"
+  },
+  {
+    "text": "Julius Caesar was a famous ruler of which empire?",
+    "options": [
+      "Roman Empire",
+      "Greek Empire",
+      "Egyptian Empire",
+      "Persian Empire"
+    ],
+    "correctAnswer": "Roman Empire"
+  }
+]

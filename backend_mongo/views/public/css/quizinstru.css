@@ -1,0 +1,73 @@
+body {
+    background: #232a4d;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.instruction-container {
+    background: #0e1830;
+    border: 3px solid #2eb3ff;
+    border-radius: 12px;
+    max-width: 900px;
+    min-height: 480px;
+    margin: 48px auto;
+    box-shadow: 0 8px 32px rgba(74,144,226,0.12);
+    padding: 56px 48px 40px 48px;
+    color: #fff;
+}
+.quizit-logo {
+    display: block;
+    margin: 0 auto 12px auto;
+    width: 120px;
+    height: auto;
+}
+.instruction-header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.instruction-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.instruction-meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+.meta-item {
+    background: #2d245c;
+    border-radius: 8px;
+    padding: 6px 18px;
+    font-weight: 400;
+}
+.instruction-list ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+.instruction-list li {
+    margin-bottom: 10px;
+    font-size: 1.08rem;
+}
+.instruction-actions {
+    text-align: center;
+}
+.start-quiz-btn {
+    background: #2eb3ff;
+    color: #fff;
+    font-size: 1.15rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.12);
+    transition: background 0.2s;
+}
+.start-quiz-btn:hover {
+    background: #1a8edb;
+}

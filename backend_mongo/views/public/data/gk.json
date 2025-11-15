@@ -1,0 +1,102 @@
+[
+  {
+    "text": "What is the tallest mammal?",
+    "options": [
+      "Giraffe",
+      "Elephant",
+      "Blue Whale",
+      "Hippo"
+    ],
+    "correctAnswer": "Giraffe"
+  },
+  {
+    "text": "How many days are in a leap year?",
+    "options": [
+      "366",
+      "365",
+      "364",
+      "367"
+    ],
+    "correctAnswer": "366"
+  },
+  {
+    "text": "What is the capital of Japan?",
+    "options": [
+      "Tokyo",
+      "Beijing",
+      "Seoul",
+      "Kyoto"
+    ],
+    "correctAnswer": "Tokyo"
+  },
+  {
+    "text": "Which of these is NOT a primary color?",
+    "options": [
+      "Green",
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "correctAnswer": "Green"
+  },
+  {
+    "text": "How often are the Summer Olympic Games held?",
+    "options": [
+      "Every 4 years",
+      "Every 2 years",
+      "Every 5 years",
+      "Every year"
+    ],
+    "correctAnswer": "Every 4 years"
+  },
+  {
+    "text": "Which is the smallest continent by land area?",
+    "options": [
+      "Australia",
+      "Europe",
+      "South America",
+      "Antarctica"
+    ],
+    "correctAnswer": "Australia"
+  },
+  {
+    "text": "What is the currency of the United Kingdom?",
+    "options": [
+      "Pound Sterling",
+      "Euro",
+      "Dollar",
+      "Yen"
+    ],
+    "correctAnswer": "Pound Sterling"
+  },
+  {
+    "text": "Who wrote the 'Harry Potter' series?",
+    "options": [
+      "J.K. Rowling",
+      "Stephen King",
+      "J.R.R. Tolkien",
+      "George R.R. Martin"
+    ],
+    "correctAnswer": "J.K. Rowling"
+  },
+  {
+    "text": "What is the national animal of India?",
+    "options": [
+      "Tiger",
+      "Lion",
+      "Elephant",
+      "Peacock"
+    ],
+    "correctAnswer": "Tiger"
+  },
+  {
+    "text": "How many states are in the United States of America?",
+    "options": [
+      "50",
+      "51",
+      "49",
+      "52"
+    ],
+    "correctAnswer": "50"
+  }
+]

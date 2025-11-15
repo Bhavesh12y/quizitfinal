@@ -1,0 +1,102 @@
+[
+  {
+    "text": "What is a 'bug' in programming?",
+    "options": [
+      "A feature of the program",
+      "A type of virus",
+      "An insect in the computer",
+      "An error in a program"
+    ],
+    "correctAnswer": "An error in a program"
+  },
+  {
+    "text": "What is a 'loop' used for?",
+    "options": [
+      "To make a decision",
+      "To stop the program",
+      "To store data",
+      "To repeat a block of code multiple times"
+    ],
+    "correctAnswer": "To repeat a block of code multiple times"
+  },
+  {
+    "text": "What does 'HTML' stand for?",
+    "options": [
+      "Home Tool Markup Language",
+      "Hyperlink and Text Markup",
+      "High-level Text Machine Language",
+      "HyperText Markup Language"
+    ],
+    "correctAnswer": "HyperText Markup Language"
+  },
+  {
+    "text": "What does 'CSS' stand for?",
+    "options": [
+      "Creative Style System",
+      "Cascading Style Sheets",
+      "Colorful Style Sheets",
+      "Computer Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets"
+  },
+  {
+    "text": "What is JavaScript primarily used for?",
+    "options": [
+      "Styling web pages",
+      "Managing databases",
+      "Creating the structure of web pages",
+      "Making web pages interactive"
+    ],
+    "correctAnswer": "Making web pages interactive"
+  },
+  {
+    "text": "What is a 'variable'?",
+    "options": [
+      "A fixed value",
+      "A container for storing data values",
+      "A bug in the code",
+      "A type of function"
+    ],
+    "correctAnswer": "A container for storing data values"
+  },
+  {
+    "text": "What is an 'algorithm'?",
+    "options": [
+      "A set of steps to solve a problem",
+      "A programming language",
+      "A syntax error",
+      "A type of computer"
+    ],
+    "correctAnswer": "A set of steps to solve a problem"
+  },
+  {
+    "text": "What is 'Git'?",
+    "options": [
+      "A text editor",
+      "A web server",
+      "A version control system",
+      "A programming language"
+    ],
+    "correctAnswer": "A version control system"
+  },
+  {
+    "text": "What is a 'function' in programming?",
+    "options": [
+      "An error message",
+      "A variable that holds text",
+      "The main part of the program",
+      "A reusable block of code that performs a task"
+    ],
+    "correctAnswer": "A reusable block of code that performs a task"
+  },
+  {
+    "text": "Binary code is made up of which two numbers?",
+    "options": [
+      "1 and 2",
+      "A and B",
+      "0 and 10",
+      "0 and 1"
+    ],
+    "correctAnswer": "0 and 1"
+  }
+]

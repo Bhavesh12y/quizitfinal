@@ -1,0 +1,102 @@
+[
+  {
+    "text": "What does 'HTML' stand for?",
+    "options": [
+      "HyperText Markup Language",
+      "Home Tool Markup Language",
+      "Hyperlink and Text Markup",
+      "High-level Text Machine Language"
+    ],
+    "correctAnswer": "HyperText Markup Language"
+  },
+  {
+    "text": "What does 'CSS' stand for?",
+    "options": [
+      "Colorful Style Sheets",
+      "Creative Style System",
+      "Cascading Style Sheets",
+      "Computer Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets"
+  },
+  {
+    "text": "What does 'CPU' stand for?",
+    "options": [
+      "Computer Personal Unit",
+      "Central Processor Unit",
+      "Central Processing Unit",
+      "Central Program Unit"
+    ],
+    "correctAnswer": "Central Processing Unit"
+  },
+  {
+    "text": "What does 'RAM' stand for?",
+    "options": [
+      "Read Only Memory",
+      "Random Access Memory",
+      "Remote Access Memory",
+      "Running Application Memory"
+    ],
+    "correctAnswer": "Random Access Memory"
+  },
+  {
+    "text": "Which company developed the JavaScript language?",
+    "options": [
+      "Google",
+      "Microsoft",
+      "Netscape",
+      "Apple"
+    ],
+    "correctAnswer": "Netscape"
+  },
+  {
+    "text": "What is the main purpose of an Operating System (OS)?",
+    "options": [
+      "To create documents",
+      "To play video games",
+      "To browse the internet",
+      "To manage hardware and software resources"
+    ],
+    "correctAnswer": "To manage hardware and software resources"
+  },
+  {
+    "text": "What does 'HTTP' stand for?",
+    "options": [
+      "HyperText Transfer Page",
+      "Hyperlink Transfer Protocol",
+      "HyperText Transmission Protocol",
+      "HyperText Transfer Protocol"
+    ],
+    "correctAnswer": "HyperText Transfer Protocol"
+  },
+  {
+    "text": "What is 'Cloud Computing'?",
+    "options": [
+      "A new type of laptop",
+      "Delivering services over the internet",
+      "A type of weather forecasting",
+      "Storing data on your local PC"
+    ],
+    "correctAnswer": "Delivering services over the internet"
+  },
+  {
+    "text": "What does 'IP' stand for in 'IP Address'?",
+    "options": [
+      "Internet Provider",
+      "Internal Protocol",
+      "Internet Protocol",
+      "Internet Page"
+    ],
+    "correctAnswer": "Internet Protocol"
+  },
+  {
+    "text": "Which of these is NOT a web browser?",
+    "options": [
+      "Microsoft PowerPoint",
+      "Apple Safari",
+      "Google Chrome",
+      "Mozilla Firefox"
+    ],
+    "correctAnswer": "Microsoft PowerPoint"
+  }
+]

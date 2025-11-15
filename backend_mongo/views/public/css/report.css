@@ -1,0 +1,187 @@
+body {
+    background: #232a4d;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.report-container {
+    background: #0e1830;
+    border: 3px solid #2eb3ff;
+    border-radius: 8px;
+    max-width: 1200px;
+    min-height: 700px;
+    margin: 32px auto;
+    box-shadow: 0 8px 32px rgba(74,144,226,0.12);
+    padding: 40px 48px 24px 48px;
+    position: relative;
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+.report-header {
+    text-align: center;
+    margin-bottom: 12px;
+}
+.report-title {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 2.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.report-main-title {
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+.report-meta-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+.report-meta {
+    background: #2d245c;
+    border-radius: 12px;
+    padding: 8px 24px;
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.12);
+    font-weight: 400;
+}
+.report-trophy {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+.report-content-flex {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    margin-top: 18px;
+}
+.report-solutions-block {
+    flex: 2;
+    min-width: 0;
+}
+.report-solutions-title {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+.report-solutions-list {
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-right: 6px;
+}
+.report-solution-item {
+    background: #232a4d;
+    border-radius: 18px;
+    padding: 18px 24px;
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.12);
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.report-question {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+.report-answer {
+    font-size: 1.05rem;
+    color: #bfc8e2;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+}
+.report-score {
+    font-size: 1.05rem;
+    color: #ffc107;
+    align-self: flex-end;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+}
+.report-footer {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-top: 32px;
+}
+.footer-title {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+/* === NEW STYLES FOR STATS BLOCK === */
+.report-stats-block {
+    flex: 1;
+    background: #232a4d;
+    border-radius: 18px;
+    padding: 24px 32px;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.12);
+    min-width: 300px;
+}
+.report-stats-title {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.report-stats-item {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.report-stats-item span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.stat-correct { color: #009688; }  /* Green */
+.stat-wrong { color: #e53935; }    /* Red */
+.stat-skipped { color: #ffc107; }  /* Yellow */
+/* === END OF NEW STYLES === */
+
+
+@media (max-width: 900px) {
+    .report-content-flex {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .report-stats-block {
+        min-width: 0;
+        margin-top: 18px;
+    }
+}
+
+/* I have REMOVED all CSS rules for:
+  - .report-pie-block
+  - .piechart
+  - .report-pie-labels
+  - .pie-label
+*/

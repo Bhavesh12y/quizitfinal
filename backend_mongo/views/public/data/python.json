@@ -1,0 +1,72 @@
+[
+  {
+    "text": "What is the correct file extension for Python files?",
+    "options": [".pt", ".py", ".js", ".pyth"],
+    "correctAnswer": ".py"
+  },
+  {
+    "text": "How do you write 'Hello, World!' in Python?",
+    "options": [
+      "echo 'Hello, World!'",
+      "System.out.println('Hello, World!')",
+      "print('Hello, World!')",
+      "console.log('Hello, World!')"
+    ],
+    "correctAnswer": "print('Hello, World!')"
+  },
+  {
+    "text": "How do you start a single-line comment in Python?",
+    "options": [
+      "// This is a comment",
+      "# This is a comment",
+      "/* This is a comment */",
+      ""
+    ],
+    "correctAnswer": "# This is a comment"
+  },
+  {
+    "text": "Which data type is used to store a sequence of characters?",
+    "options": ["integer (int)", "boolean (bool)", "string (str)", "list"],
+    "correctAnswer": "string (str)"
+  },
+  {
+    "text": "What keyword is used to define a function in Python?",
+    "options": ["define", "function", "fun", "def"],
+    "correctAnswer": "def"
+  },
+  {
+    "text": "What is the correct way to create a list in Python?",
+    "options": [
+      "myList = {1:'apple', 2:'banana'}",
+      "myList = ('apple', 'banana', 'cherry')",
+      "myList = {'apple', 'banana', 'cherry'}",
+      "myList = ['apple', 'banana', 'cherry']"
+    ],
+    "correctAnswer": "myList = ['apple', 'banana', 'cherry']"
+  },
+  {
+    "text": "What is the output of len('Python')?",
+    "options": ["7", "Error", "6", "5"],
+    "correctAnswer": "6"
+  },
+  {
+    "text": "What is the correct syntax for an 'if' statement in Python?",
+    "options": ["if x > y then:", "if x > y {}", "if (x > y)", "if x > y:"],
+    "correctAnswer": "if x > y:"
+  },
+  {
+    "text": "What does the '==' operator do?",
+    "options": [
+      "Assigns a value to a variable",
+      "Checks if two values are equal",
+      "Checks if two values are not equal",
+      "Multiplies two values"
+    ],
+    "correctAnswer": "Checks if two values are equal"
+  },
+  {
+    "text": "What is the keyword to get user input in Python 3?",
+    "options": ["prompt()", "input()", "raw_input()", "getInput()"],
+    "correctAnswer": "input()"
+  }
+]
