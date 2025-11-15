@@ -70,48 +70,55 @@
   </section>
 
   <!-- Signup Script (MUST BE AT BOTTOM) -->
-  <script>
-    document.getElementById("signupForm").addEventListener("submit", async function(e){
-        e.preventDefault();
+<script>
+document.getElementById("signupForm").addEventListener("submit", async function(e){
+    e.preventDefault();
 
-        const displayName = document.getElementById("fullname").value.trim();
-        const username    = document.getElementById("username").value.trim();
-        const password    = document.getElementById("password").value;
+    const displayName = document.getElementById("fullname").value.trim();
+    const username    = document.getElementById("username").value.trim();
+    const password    = document.getElementById("password").value;
 
-        if(!username || !password){
-            alert("Username and password are required!");
-            return;
-        }
+    if (!username || !password) {
+        alert("Username and password are required!");
+        return;
+    }
 
-        try {
-          const res = await fetch("http://localhost:5000/api/auth/signup", {
+    const API_BASE =
+        window.location.hostname === "localhost"
+            ? "http://localhost:5000"
+            : "https://quizit-25r8.onrender.com";
+
+    try {
+        const res = await fetch(`${API_BASE}/api/auth/signup`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              username,
-              password,
-              displayName
+                username,
+                password,
+                displayName
             })
-          });
+        });
 
-          const data = await res.json();
+        const data = await res.json();
 
-          if (data.token) {
+        if (data.token) {
             localStorage.setItem("token", data.token);
             localStorage.setItem("user", JSON.stringify(data.user));
 
             alert("Signup successful!");
             window.location.href = "/login";
-          } else {
+        } else {
             alert(data.error || "Signup failed!");
-          }
-
-        } catch (err) {
-          console.error("Signup error:", err);
-          alert("Signup failed — server not reachable.");
         }
-    });
-  </script>
+
+    } catch (err) {
+        console.error("Signup error:", err);
+        alert("Signup failed — server not reachable.");
+    }
+});
+</script>
+
+
 
 </body>
 </html>
