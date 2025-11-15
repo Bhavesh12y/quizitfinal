@@ -68,15 +68,36 @@ body {
     border-collapse: collapse;
     margin-bottom: 0;
     color: #fff;
-    font-family: 'Freckle Face', cursive;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.1rem;
 }
 .leaderboard-table th {
     background: #1a1a2e;
     font-weight: bold;
-    padding: 8px 12px;
-    border-bottom: 1px solid #38406b;
+    padding: 12px 16px;
+    border-bottom: 2px solid #2eb3ff;
+    text-align: center;
+    font-size: 1rem;
+}
+.leaderboard-table th:nth-child(1) {
+    width: 25%;
     text-align: left;
+}
+.leaderboard-table th:nth-child(2) {
+    width: 20%;
+    text-align: center;
+}
+.leaderboard-table th:nth-child(3) {
+    width: 18%;
+    text-align: center;
+}
+.leaderboard-table th:nth-child(4) {
+    width: 18%;
+    text-align: center;
+}
+.leaderboard-table th:nth-child(5) {
+    width: 19%;
+    text-align: center;
 }
 .leaderboard-scroll-list {
     max-height: 320px;
@@ -114,18 +135,27 @@ body {
 .leaderboard-row {
     background: #2d245c;
     border-radius: 12px;
-    padding: 18px 32px;
-    font-size: 1.15rem;
+    padding: 16px 32px;
+    font-size: 1.05rem;
     color: #fff;
     font-family: 'Roboto', Arial, sans-serif;
     box-shadow: 0 2px 8px rgba(74,144,226,0.12);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    gap: 18px;
-/* Filter dropdown styles */
-
-
+    gap: 12px;
+    text-align: center;
+}
+.leaderboard-row span:nth-child(1) {
+    text-align: left;
+    grid-column: 1;
+}
+.leaderboard-row span:nth-child(2),
+.leaderboard-row span:nth-child(3),
+.leaderboard-row span:nth-child(4),
+.leaderboard-row span:nth-child(5) {
+    text-align: center;
+}
 .score-trophy {
     width: 36px;
     height: 36px;
