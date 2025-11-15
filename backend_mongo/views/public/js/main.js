@@ -78,7 +78,7 @@ async function loadRecentQuizzes() {
                 <span>${date}</span>
                 <span>${time}</span>
                 <span>${category}</span>
-                <span>${score} <img src="/images/trophy.png" class="quiz-trophy"></span>
+                <span>${score} <img src="/img/trophynew.png" class="quiz-trophy"></span>
             `;
 
             btn.onclick = () => {

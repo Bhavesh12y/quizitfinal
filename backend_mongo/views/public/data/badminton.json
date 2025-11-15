@@ -1,0 +1,52 @@
+[
+  {
+    "text": "What is the maximum number of points in a badminton game?",
+    "options": ["11", "15", "21", "25"],
+    "correctAnswer": "21"
+  },
+  {
+    "text": "What is the name of the object players hit in badminton?",
+    "options": ["Ball", "Shuttlecock", "Feather ball", "Flybird"],
+    "correctAnswer": "Shuttlecock"
+  },
+  {
+    "text": "Which stroke is used to start a rally?",
+    "options": ["Smash", "Drop", "Serve", "Lift"],
+    "correctAnswer": "Serve"
+  },
+  {
+    "text": "What material is a professional shuttlecock usually made of?",
+    "options": ["Plastic", "Rubber", "Feathers", "Paper"],
+    "correctAnswer": "Feathers"
+  },
+  {
+    "text": "How many players are on each side in a doubles match?",
+    "options": ["1", "2", "3", "4"],
+    "correctAnswer": "2"
+  },
+  {
+    "text": "What is the fastest shot in badminton?",
+    "options": ["Serve", "Drop", "Smash", "Clear"],
+    "correctAnswer": "Smash"
+  },
+  {
+    "text": "What is it called when the shuttle hits the net and falls on the opponent’s side on a serve?",
+    "options": ["Fault", "Let", "Replay", "Drop"],
+    "correctAnswer": "Let"
+  },
+  {
+    "text": "What line determines if a serve is valid in doubles?",
+    "options": ["Base line", "Service line", "Center line", "Back boundary line"],
+    "correctAnswer": "Service line"
+  },
+  {
+    "text": "What is the height of a badminton net?",
+    "options": ["4 ft 6 in", "5 ft 1 in", "5 ft", "6 ft"],
+    "correctAnswer": "5 ft 1 in"
+  },
+  {
+    "text": "What is the term for a high and deep shot to the opponent’s backcourt?",
+    "options": ["Clear", "Drop", "Smash", "Push"],
+    "correctAnswer": "Clear"
+  }
+]

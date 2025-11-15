@@ -167,6 +167,28 @@ body {
 .stat-skipped { color: #ffc107; }  /* Yellow */
 /* === END OF NEW STYLES === */
 
+/* Style quiz buttons in report actions to match site theme */
+.report-actions .quiz-submit,
+.report-actions .quiz-skip {
+    background: #2d245c;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(74,144,226,0.12);
+    transition: background 0.2s, color 0.2s;
+}
+.report-actions .quiz-submit:hover,
+.report-actions .quiz-skip:hover {
+    background: #4a90e2;
+    color: #fff;
+}
+
+
 
 @media (max-width: 900px) {
     .report-content-flex {

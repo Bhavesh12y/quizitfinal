@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ-IT | Let's Play!</title>
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/quiz.css">
     <script src="/js/quiz.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <%- include('partials/navbar') %>
     <div class="quiz-container">
         <div class="quiz-header">
             <span class="quiz-title">QUIZ-IT</span>
@@ -30,7 +32,7 @@
         
         <div class="quiz-bottom-row" id="quiz-bottom-bar">
             <span class="quiz-progress" id="quiz-progress-text">Question 0 of 0</span>
-            <span class="quiz-timer" id="quiz-timer">Time: 10:00</span>
+            <span class="quiz-timer" id="quiz-timer">Time: 2:00</span>
         </div>
         
         <div class="quiz-action-row" id="quiz-action-buttons">
@@ -48,5 +50,6 @@
         </div>
         
     </div>
+    <%- include('partials/footer') %>
 </body>
 </html>

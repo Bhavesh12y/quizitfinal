@@ -4,26 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEADERBOARD</title>
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/leaderboard.css">
     <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
 <body>
+    <%- include('partials/navbar') %>
     <div class="leaderboard-container">
         <div class="leaderboard-header">
             <span class="leaderboard-title">QUIZ -IT</span>
         </div>
         <div class="leaderboard-main-title">LEADERBOARD</div>
-        <div class="leaderboard-filter-row" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 18px; gap: 12px;">
-            <label for="category-filter" style="font-family: 'Roboto', Arial, sans-serif; font-size: 1.1rem; color: #fff;">Filter by Category:</label>
-            <select id="category-filter" style="font-family: 'Roboto', Arial, sans-serif; font-size: 1.1rem; padding: 6px 12px; border-radius: 6px; border: 1px solid #2eb3ff;">
-                <option value="all">All</option>
-                <option value="science">Science</option>
-                <option value="math">Math</option>
-                <option value="history">History</option>
-                <option value="sports">Sports</option>
-                <option value="tech">Tech</option>
-            </select>
-        </div>
+       
         <div class="leaderboard-content-flex">
             <div class="leaderboard-img-block">
                 <img src="/img/leaderboy.png" alt="Trophy Winner" class="leaderboard-img" style="width: 260px; height: auto;">
@@ -43,14 +35,18 @@
                 <div class="leaderboard-scroll-list">
                     
                     </div>
+                <div class="leaderboard-actions">
+                    <button class="leaderboard-home-btn" onclick="window.location.href='/'">Home</button>
                 </div>
             </div>
         </div>
+
         <footer class="leaderboard-footer">
             <span class="footer-title">QUIZ IT :</span> ALL RIGHTS ARE RESERVED
         </footer>
 
     </div>
+    <%- include('partials/footer') %>
 
     <script src="/js/leaderboard.js"></script>
 

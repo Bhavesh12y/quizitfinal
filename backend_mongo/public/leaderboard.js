@@ -17,7 +17,7 @@ async function loadLeaderboard() {
                 <span>${i + 1}. ${item.displayName || item.username}</span>
                 <span>${item.region || "India"}</span>
                 <span>${item.quizCount}</span>
-                <span>${item.bestScore} <img src="trophy.png" class="score-trophy"></span>
+                <span>${item.bestScore} <img src="/img/trophynew.png" class="score-trophy"></span>
                 <span>All</span>
             `;
 

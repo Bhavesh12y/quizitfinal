@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     reportTimeEl.innerText = quizDate.toLocaleTimeString();
     reportCategoryEl.innerText = data.category;
 
-    // ⭐ FIXED TROPHY PATH
-    reportScoreEl.innerHTML = `${data.score} <img src="/images/trophy.png" class="report-trophy">`;
+    // Report score with trophy image
+    reportScoreEl.innerHTML = `${data.score} <img src="/img/trophynew.png" class="report-trophy">`;
 
     correctCountEl.innerText = correctCount;
     wrongCountEl.innerText = wrongCount;

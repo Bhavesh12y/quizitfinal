@@ -4,24 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-IT - Test Your Skills</title>
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="nav-container">
-            <div class="logo">QUIZ-IT</div>
-            <nav class="nav-menu">
-                <a href="/">HOME</a>
-                <a href="#categories">EXPLORE</a>
-                <a href="#results">HISTORY</a>
-                <a href="#contact">ABOUT US</a>
-                <a href="/leaderboard">LEADERBOARD</a>
-                <a href="/login" id="userNameDisplay">LOGIN</a>
-            </nav>
-        </div>
-    </header>
+    <%- include('partials/navbar') %>
+    <!-- Hero Section -->
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-main-rectangle">
@@ -112,18 +102,16 @@
             <div class="contact-visual-block">
                 <img src="/img/contactusquizit.png" alt="Contact Visual" class="contact-img">
                 <div class="vertical-socials">
-                    <a href="#" class="social-icon"><img src="/img/LINKEDIN.png" alt="LinkedIn"></a>
-                    <a href="#" class="social-icon"><img src="/img/instagram.png" alt="Instagram"></a>
-                    <a href="#" class="social-icon"><img src="/img/facebook.png" alt="Facebook"></a>
-                    <a href="#" class="social-icon"><img src="/img/youtube.png" alt="YouTube"></a>
-                    <a href="#" class="social-icon"><img src="/img/x.png" alt="X"></a>
+                    <a href="https://www.linkedin.com" class="social-icon" target="_blank" rel="noopener noreferrer"><img src="/img/LINKEDIN.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer"><img src="/img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer"><img src="/img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com" class="social-icon" target="_blank" rel="noopener noreferrer"><img src="/img/youtube.png" alt="YouTube"></a>
+                    <a href="https://x.com" class="social-icon" target="_blank" rel="noopener noreferrer"><img src="/img/x.png" alt="X"></a>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <p><span class="footer-title">QUIZ IT :</span> ALL RIGHTS ARE RESERVED</p>
-    </footer>
+    <%- include('partials/footer') %>
     <script src="/js/main.js"></script>
 
     <script>

@@ -58,6 +58,31 @@ const totalQuestionsEl = document.getElementById('total-questions');
 
 let myQuiz;
 let timerInterval;
+// Prevent accidental navigation away from quiz
+let allowNavigateAway = false;
+
+function beforeUnloadHandler(e) {
+  if (allowNavigateAway) return undefined;
+  e.preventDefault();
+  e.returnValue = '';
+  return '';
+}
+
+function anchorClickHandler(e) {
+  const a = e.target.closest && e.target.closest('a');
+  if (!a) return;
+  const href = a.getAttribute('href') || a.href;
+  if (!href || href === '#' || href.startsWith('javascript:')) return;
+
+  if (!allowNavigateAway) {
+    const ok = confirm('Are you sure you want to leave the quiz? Your progress will be lost.');
+    if (!ok) e.preventDefault();
+    else allowNavigateAway = true;
+  }
+}
+
+window.addEventListener('beforeunload', beforeUnloadHandler);
+window.addEventListener('click', anchorClickHandler);
 
 async function startQuiz() {
   try {
@@ -76,7 +101,8 @@ async function startQuiz() {
     myQuiz.category = category;
 
     updateUIForNewQuestion();
-    startTimer(60);
+    // start a 2 minute timer (120 seconds)
+    startTimer(120);
 
     submitBtn.addEventListener('click', handleSubmit);
     skipBtn.addEventListener('click', handleSkip);
@@ -122,12 +148,8 @@ function updateUIForNewQuestion() {
   skipBtn.disabled = false;
 }
 
-function handleSubmit() {
-  if (submitBtn.innerText === "Next") {
-    updateUIForNewQuestion();
-    return;
-  }
 
+function handleSubmit() {
   const selected = optionsFormEl.querySelector('input[name="quiz-option"]:checked');
   if (!selected) {
     alert("Please select an answer!");
@@ -137,16 +159,15 @@ function handleSubmit() {
   const userChoice = selected.value;
   const currentQ = myQuiz.getCurrentQuestion();
 
-  // Disable options
   optionsFormEl.querySelectorAll(".quiz-radio").forEach(r => r.disabled = true);
 
-  // Mark answers
   const selectedLabel = selected.closest(".quiz-option-label");
 
   if (currentQ.checkAnswer(userChoice)) {
     selectedLabel.classList.add("correct");
   } else {
     selectedLabel.classList.add("wrong");
+
     [...optionsFormEl.children].forEach(label => {
       if (label.querySelector("input").value === currentQ.correctAnswer) {
         label.classList.add("correct");
@@ -155,9 +176,13 @@ function handleSubmit() {
   }
 
   myQuiz.submitAnswer(userChoice);
-  submitBtn.innerText = "Next";
   skipBtn.disabled = true;
+
+  setTimeout(() => {
+    updateUIForNewQuestion();
+  }, 800); // 0.8 sec highlight
 }
+
 
 function handleSkip() {
   myQuiz.userAnswers.push(null);
@@ -189,6 +214,11 @@ async function submitResult(score, total) {
 }
 
 async function showResults() {
+  // allow redirect without prompting the user
+  allowNavigateAway = true;
+  window.removeEventListener('beforeunload', beforeUnloadHandler);
+  window.removeEventListener('click', anchorClickHandler);
+
   clearInterval(timerInterval);
 
   try {

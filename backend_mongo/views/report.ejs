@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ REPORT</title>
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/report.css">
     <script src="/js/report.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
 <body>
+    <%- include('partials/navbar') %>
     <div class="report-container">
        <a href="/"><div class="report-header">
             <span class="report-title">QUIZ -IT</span>
@@ -46,9 +48,12 @@
             </div>
             </div>
         
-        <footer class="report-footer">
-            <span class="footer-title">QUIZ IT :</span> ALL RIGHTS ARE RESERVED
-        </footer>
+            <div class="report-actions" style="text-align:center; margin-top: 22px;">
+                <button class="quiz-submit" onclick="window.location.href='/'" style="margin:6px;">Home</button>
+                <button class="quiz-skip" onclick="window.location.href='/leaderboard'" style="margin:6px;">Leaderboard</button>
+            </div>
+
     </div>
+    <%- include('partials/footer') %>
 </body>
 </html>

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Instructions</title>
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/quizinstru.css">
     <script src="/js/quizintruc.js" defer></script>
 </head>
 <body>
+    <%- include('partials/navbar') %>
     <div class="instruction-container">
         <div class="instruction-header">
             <img src="/img/newmainimg.png" alt="Quiz It Logo" class="quizit-logo" style="width: 90px; height: auto; margin-bottom: 12px;">
@@ -16,7 +18,7 @@
                 <span class="meta-item"><strong>Category:</strong> 
                     <span id="quiz-category">Loading...</span>
                 </span>
-                <span class="meta-item"><strong>Time Limit:</strong> <span id="quiz-time">30 seconds</span></span>
+                <span class="meta-item"><strong>Time Limit:</strong> <span id="quiz-time">2 minutes</span></span>
                 <span class="meta-item"><strong>Total Questions:</strong> <span id="quiz-questions">10</span>
             </div>
         </div>
@@ -36,5 +38,6 @@
             <button class="start-quiz-btn" onclick="window.location.href='/'" style="margin-left: 18px; background: #38406b;">Back to Home</button>
         </div>
     </div>
+    <%- include('partials/footer') %>
 </body>
 </html>

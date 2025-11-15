@@ -1,0 +1,159 @@
+/* ===== NAVBAR STYLES ===== */
+.navbar-custom {
+    background: #0e1830;
+    border-bottom: 3px solid #2eb3ff;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.navbar-logo {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+    color: #2eb3ff;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 16px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-link:hover {
+    color: #2eb3ff;
+    border-bottom-color: #2eb3ff;
+}
+
+/* ===== USER SECTION IN NAVBAR ===== */
+.navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar-username {
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(46, 179, 255, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar-username:hover {
+    background: rgba(46, 179, 255, 0.2);
+    color: #2eb3ff;
+}
+
+.navbar-logout-btn {
+    background: #2d245c;
+    color: #fff;
+    border: 1px solid #2eb3ff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar-logout-btn:hover {
+    background: #4a90e2;
+    border-color: #4a90e2;
+    color: #fff;
+}
+
+/* ===== FOOTER STYLES ===== */
+.footer-custom {
+    background: #0e1830;
+    border-top: 3px solid #2eb3ff;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 12px rgba(74, 144, 226, 0.15);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 16px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-logo {
+        font-size: 1.4rem;
+    }
+
+    .navbar-menu {
+        gap: 16px;
+        order: 3;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .navbar-link {
+        font-size: 0.9rem;
+        padding: 12px 0;
+    }
+
+    .navbar-user {
+        gap: 8px;
+    }
+
+    .navbar-username {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+    .navbar-logout-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}

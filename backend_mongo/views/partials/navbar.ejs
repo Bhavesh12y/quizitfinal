@@ -1,0 +1,37 @@
+<nav class="navbar-custom">
+    <div class="navbar-container">
+        <a href="/" class="navbar-logo">QUIZ-IT</a>
+        <div class="navbar-menu">
+            <a href="/" class="navbar-link">Home</a>
+            <a href="/#results" class="navbar-link">History</a>
+            <a href="/leaderboard" class="navbar-link">Leaderboard</a>
+        </div>
+        <div class="navbar-user">
+            <span class="navbar-username" id="navbar-username">Login</span>
+            <button class="navbar-logout-btn" id="navbar-logout-btn" onclick="handleLogout()" style="display: none;">Logout</button>
+        </div>
+    </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const user = JSON.parse(localStorage.getItem('user'));
+    const usernameEl = document.getElementById('navbar-username');
+    const logoutBtn = document.getElementById('navbar-logout-btn');
+
+    if (user) {
+        usernameEl.innerText = user.displayName || user.username;
+        logoutBtn.style.display = 'inline-block';
+    } else {
+        usernameEl.innerText = 'Login';
+        usernameEl.style.cursor = 'pointer';
+        usernameEl.onclick = () => window.location.href = '/login';
+    }
+});
+
+function handleLogout() {
+    localStorage.removeItem('user');
+    localStorage.removeItem('token');
+    window.location.href = '/login';
+}
+</script>
