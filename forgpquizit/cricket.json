@@ -1,0 +1,72 @@
+[
+  {
+    "text": "How many players are on a cricket team (on the field)?",
+    "options": ["10", "12", "9", "11"],
+    "correctAnswer": "11"
+  },
+  {
+    "text": "What does 'LBW' stand for?",
+    "options": [
+      "Leg Bye Wicket",
+      "Long Boundary Wide",
+      "Leg Before Wicket",
+      "Lost Ball Wicket"
+    ],
+    "correctAnswer": "Leg Before Wicket"
+  },
+  {
+    "text": "Which player is often called the 'God of Cricket'?",
+    "options": [
+      "Don Bradman",
+      "Virat Kohli",
+      "MS Dhoni",
+      "Sachin Tendulkar"
+    ],
+    "correctAnswer": "Sachin Tendulkar"
+  },
+  {
+    "text": "How many overs are in a T20 cricket match (per innings)?",
+    "options": ["10", "40", "50", "20"],
+    "correctAnswer": "20"
+  },
+  {
+    "text": "How many overs are in a One Day International (ODI) (per innings)?",
+    "options": ["90", "20", "60", "50"],
+    "correctAnswer": "50"
+  },
+  {
+    "text": "How often is the ICC Cricket World Cup (ODI) held?",
+    "options": [
+      "Every 5 years",
+      "Every 4 years",
+      "Every year",
+      "Every 2 years"
+    ],
+    "correctAnswer": "Every 4 years"
+  },
+  {
+    "text": "How many stumps are there at one end of a cricket pitch?",
+    "options": ["2", "1", "4", "3"],
+    "correctAnswer": "3"
+  },
+  {
+    "text": "What does it mean if a batsman is out for a 'duck'?",
+    "options": [
+      "They ran too slowly",
+      "They scored 0 runs",
+      "They were hit by the ball",
+      "They hit the ball too high"
+    ],
+    "correctAnswer": "They scored 0 runs"
+  },
+  {
+    "text": "What is the maximum number of days a Test Match can last?",
+    "options": ["1", "7", "3", "5"],
+    "correctAnswer": "5"
+  },
+  {
+    "text": "What does the umpire shout to appeal for a wicket?",
+    "options": ["Out!", "Wicket!", "Gone!", "Howzat!"],
+    "correctAnswer": "Howzat!"
+  }
+]

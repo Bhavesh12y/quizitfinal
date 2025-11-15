@@ -1,0 +1,77 @@
+[
+  {
+    "text": "What is Newton's Second Law of Motion?",
+    "options": [
+      "For every action, there is an equal and opposite reaction",
+      "E = mc²",
+      "An object in motion stays in motion",
+      "F = ma (Force = mass x acceleration)"
+    ],
+    "correctAnswer": "F = ma (Force = mass x acceleration)"
+  },
+  {
+    "text": "What is the unit of electric current?",
+    "options": ["Volt (V)", "Ampere (A)", "Ohm (Ω)", "Watt (W)"],
+    "correctAnswer": "Ampere (A)"
+  },
+  {
+    "text": "What is the unit of Force?",
+    "options": ["Pascal (Pa)", "Newton (N)", "Watt (W)", "Joule (J)"],
+    "correctAnswer": "Newton (N)"
+  },
+  {
+    "text": "Who developed the theory of relativity?",
+    "options": [
+      "Galileo Galilei",
+      "Stephen Hawking",
+      "Albert Einstein",
+      "Isaac Newton"
+    ],
+    "correctAnswer": "Albert Einstein"
+  },
+  {
+    "text": "What is the energy of motion called?",
+    "options": [
+      "Chemical Energy",
+      "Kinetic Energy",
+      "Potential Energy",
+      "Nuclear Energy"
+    ],
+    "correctAnswer": "Kinetic Energy"
+  },
+  {
+    "text": "What is the charge of an electron?",
+    "options": ["Neutral", "Negative", "Positive", "It varies"],
+    "correctAnswer": "Negative"
+  },
+  {
+    "text": "Which travels faster, light or sound?",
+    "options": [
+      "Depends on the medium",
+      "They travel at the same speed",
+      "Sound",
+      "Light"
+    ],
+    "correctAnswer": "Light"
+  },
+  {
+    "text": "What is the center of an atom called?",
+    "options": ["Electron", "Molecule", "Nucleus", "Proton"],
+    "correctAnswer": "Nucleus"
+  },
+  {
+    "text": "What does a 'light year' measure?",
+    "options": ["Brightness", "Time", "Speed", "Distance"],
+    "correctAnswer": "Distance"
+  },
+  {
+    "text": "What are the three states of matter (commonly taught)?",
+    "options": [
+      "Atom, Molecule, Compound",
+      "Solid, Liquid, Plasma",
+      "Heat, Cold, Warm",
+      "Solid, Liquid, Gas"
+    ],
+    "correctAnswer": "Solid, Liquid, Gas"
+  }
+]

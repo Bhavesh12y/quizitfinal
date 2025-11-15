@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Who wrote 'Romeo and Juliet'?",
+    "options": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Jane Austen",
+      "Mark Twain"
+    ],
+    "correctAnswer": "William Shakespeare"
+  },
+  {
+    "text": "The line 'To be, or not to be' is from which Shakespeare play?",
+    "options": [
+      "Hamlet",
+      "Macbeth",
+      "Othello",
+      "King Lear"
+    ],
+    "correctAnswer": "Hamlet"
+  },
+  {
+    "text": "Who wrote the 'Harry Potter' series?",
+    "options": [
+      "J.K. Rowling",
+      "Stephen King",
+      "J.R.R. Tolkien",
+      "C.S. Lewis"
+    ],
+    "correctAnswer": "J.K. Rowling"
+  },
+  {
+    "text": "Who wrote the novel '1984'?",
+    "options": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "F. Scott Fitzgerald"
+    ],
+    "correctAnswer": "George Orwell"
+  },
+  {
+    "text": "Who wrote 'The Great Gatsby'?",
+    "options": [
+      "F. Scott Fitzgerald",
+      "Ernest Hemingway",
+      "William Faulkner",
+      "John Steinbeck"
+    ],
+    "correctAnswer": "F. Scott Fitzgerald"
+  },
+  {
+    "text": "Who wrote 'Pride and Prejudice'?",
+    "options": [
+      "Jane Austen",
+      "Charlotte Brontë",
+      "Emily Brontë",
+      "Mary Shelley"
+    ],
+    "correctAnswer": "Jane Austen"
+  },
+  {
+    "text": "Who wrote 'The Lord of the Rings'?",
+    "options": [
+      "J.R.R. Tolkien",
+      "C.S. Lewis",
+      "George R.R. Martin",
+      "J.K. Rowling"
+    ],
+    "correctAnswer": "J.R.R. Tolkien"
+  },
+  {
+    "text": "What is the name of the main character in 'Moby-Dick'?",
+    "options": [
+      "Captain Ahab",
+      "Ishmael",
+      "Moby Dick",
+      "Queequeg"
+    ],
+    "correctAnswer": "Captain Ahab"
+  },
+  {
+    "text": "What is the main character in a story called?",
+    "options": [
+      "Protagonist",
+      "Antagonist",
+      "Foil",
+      "Narrator"
+    ],
+    "correctAnswer": "Protagonist"
+  },
+  {
+    "text": "What is a 14-line poem with a specific rhyme scheme called?",
+    "options": [
+      "A sonnet",
+      "A haiku",
+      "A limerick",
+      "An epic"
+    ],
+    "correctAnswer": "A sonnet"
+  }
+]

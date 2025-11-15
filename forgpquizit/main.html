@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">QUIZ-IT</div>
+            <nav class="nav-menu">
+                <a href="main.html">HOME</a>
+                <a href="#categories">EXPLORE</a>
+                <a href="#results">HISTORY</a>
+                <a href="#contact">ABOUT US</a>
+                <a href="leaderboard.html">LEADERBOARD</a>
+                <a href="login.html" id="userNameDisplay">LOGIN</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-main-rectangle">
+            <div class="hero-content">
+                 <h1>QUIZ-IT</h1>
+               <div class="d"> <p class="hero-description">Test your skills, challenge your knowledge, and climb the leaderboard</p>
+                <p class="hero-description">A fun and interactive platform to sharpen your IT expertise.</p>
+            </div></div>
+                
+            <div class="hero-character">
+                <div class="character-img"></div>
+            </div>
+        </div>
+    </section>
+    <a href="#categories" class="explore-btn btn-effect" style="margin-top: 32px;">Explore Quizzes</a>
+
+    <!-- Categories Section -->
+<section id="categories" class="categories">
+        <h2>Choose Your Category</h2>
+
+        <div class="search-bar">
+            <input type="text" id="categorySearch" placeholder="Search categories...">
+        </div>
+
+        <div class="category-grid">
+            <a href="quizintruc.html?category=TECH" class="category-item"><img src="scienceit.png"><div class="category-name">TECH</div></a>
+            <a href="quizintruc.html?category=MATHS" class="category-item"><img src="scienceit.png"><div class="category-name">MATHS</div></a>
+            <a href="quizintruc.html?category=SCIENCE" class="category-item"><img src="scienceit.png"><div class="category-name">SCIENCE</div></a>
+            <a href="quizintruc.html?category=SST" class="category-item"><img src="scienceit.png"><div class="category-name">SST</div></a>
+            <a href="quizintruc.html?category=PYTHON" class="category-item"><img src="scienceit.png"><div class="category-name">PYTHON</div></a>
+            <a href="quizintruc.html?category=GK" class="category-item"><img src="scienceit.png"><div class="category-name">GK</div></a>
+            <a href="quizintruc.html?category=HISTORY" class="category-item"><img src="scienceit.png"><div class="category-name">HISTORY</div></a>
+            <a href="quizintruc.html?category=CRICKET" class="category-item"><img src="scienceit.png"><div class="category-name">CRICKET</div></a>
+            <a href="quizintruc.html?category=BADMINTON" class="category-item"><img src="scienceit.png"><div class="category-name">BADMINTON</div></a>
+            <a href="quizintruc.html?category=FRENCHREVOLUTION" class="category-item"><img src="scienceit.png"><div class="category-name">FRENCH REVOLUTION</div></a>
+            <a href="quizintruc.html?category=PHYSICS" class="category-item"><img src="scienceit.png"><div class="category-name">PHYSICS</div></a>
+            <a href="quizintruc.html?category=CHEMISTRY" class="category-item"><img src="scienceit.png"><div class="category-name">CHEMISTRY</div></a>
+            <a href="quizintruc.html?category=LITERATURE" class="category-item"><img src="scienceit.png"><div class="category-name">LITERATURE</div></a>
+            <a href="quizintruc.html?category=CODING" class="category-item"><img src="scienceit.png"><div class="category-name">CODING</div></a>
+        </div>
+    </section>
+
+    <div class="quote">
+        " Whether you're a student or teacher, stay sharp and stay ahead "
+    </div>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <h2 class="results-title">RESULTS</h2>
+        <div class="results-flex">
+            <div class="recent-quizzes-block">
+                <h3 class="recent-title">RECENT QUIZZES</h3>
+                <div class="quiz-scroll-list">
+                    <button class="quiz-row" onclick="window.location.href='report.html'"><span>27th Sept 25</span><span>10:00 pm</span><span>Maths</span><span>10 <img src="trophy.png" class="quiz-trophy"></span></button>
+                    <button class="quiz-row" onclick="window.location.href='report.html'"><span>26th Sept 25</span><span>10:00 pm</span><span>Maths</span><span>10 <img src="trophy.png" class="quiz-trophy"></span></button>
+                    <button class="quiz-row" onclick="window.location.href='report.html'"><span>24th Sept 25</span><span>10:00 pm</span><span>Maths</span><span>10 <img src="trophy.png" class="quiz-trophy"></span></button>
+                    <button class="quiz-row" onclick="window.location.href='report.html'"><span>23th Sept 25</span><span>10:00 pm</span><span>Maths</span><span>10 <img src="trophy.png" class="quiz-trophy"></span></button>
+                    <button class="quiz-row" onclick="window.location.href='report.html'"><span>22th Sept 25</span><span>10:00 pm</span><span>Maths</span><span>10 <img src="trophy.png" class="quiz-trophy"></span></button>
+                    <button class="quiz-row" onclick="window.location.href='report.html'"><span>21th Sept 25</span><span>10:00 pm</span><span>Maths</span><span>10 <img src="trophy.png" class="quiz-trophy"></span></button>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="contact-title">CONNECT US</h2>
+        <div class="contact-flex">
+            <div class="contact-form-block">
+                <h3 class="contact-form-title">LEAVE A MESSAGE</h3>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label for="name">NAME :</label>
+                        <input type="text" id="name" placeholder="Enter full name">
+                    </div>
+                    <div class="form-row">
+                        <label for="mail">MAIL :</label>
+                        <input type="email" id="mail" placeholder="Enter mail id">
+                    </div>
+                    <div class="form-row">
+                        <label for="text">TEXT :</label>
+                        <textarea id="text" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit" onclick="window.location.href='main.html'">SUBMIT MESSAGE</button>
+                </form>
+            </div>
+            <div class="contact-visual-block">
+                <img src="contactusquizit.png" alt="Contact Visual" class="contact-img">
+                <div class="vertical-socials">
+                    <a href="#" class="social-icon"><img src="LINKEDIN.png" alt="LinkedIn"></a>
+                    <a href="#" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="youtube.png" alt="YouTube"></a>
+                    <a href="#" class="social-icon"><img src="x.png" alt="X"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p><span class="footer-title">QUIZ IT :</span> ALL RIGHTS ARE RESERVED</p>
+    </footer>
+    <script src="main.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    const nameEl = document.getElementById("userNameDisplay");
+
+    if(user){
+        nameEl.innerText = user.displayName || user.username;
+    } else {
+        nameEl.innerText = "Login";
+        nameEl.href = "login.html";
+    }
+
+});
+</script>
+
+<script>
+document.querySelector(".contact-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const mail = document.getElementById("mail").value.trim();
+    const text = document.getElementById("text").value.trim();
+
+    if (!name || !mail || !text) {
+        alert("Please fill all fields!");
+        return;
+    }
+
+    const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, mail, text })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+        alert("Message submitted successfully!");
+        document.querySelector(".contact-form").reset();
+        window.location.href = "main.html";
+    } else {
+        alert("Failed to submit message!");
+    }
+});
+</script>
+
+
+</body>
+</html>

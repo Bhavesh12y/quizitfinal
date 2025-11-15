@@ -1,0 +1,102 @@
+[
+  {
+    "text": "In what year did the French Revolution begin?",
+    "options": [
+      "1789",
+      "1776",
+      "1812",
+      "1799"
+    ],
+    "correctAnswer": "1789"
+  },
+  {
+    "text": "What famous prison was stormed on July 14, 1789?",
+    "options": [
+      "The Bastille",
+      "The Louvre",
+      "The Tower of London",
+      "Versailles"
+    ],
+    "correctAnswer": "The Bastille"
+  },
+  {
+    "text": "Who was the King of France at the start of the revolution?",
+    "options": [
+      "Louis XVI",
+      "Louis XIV",
+      "Louis XV",
+      "Napoleon Bonaparte"
+    ],
+    "correctAnswer": "Louis XVI"
+  },
+  {
+    "text": "Who was the Queen of France, known for her lavish spending?",
+    "options": [
+      "Marie Antoinette",
+      "Catherine de Medici",
+      "Joan of Arc",
+      "Anne of Austria"
+    ],
+    "correctAnswer": "Marie Antoinette"
+  },
+  {
+    "text": "What was the 'Reign of Terror'?",
+    "options": [
+      "A period of mass executions by guillotine",
+      "A military campaign by Napoleon",
+      "A severe famine",
+      "A financial crisis"
+    ],
+    "correctAnswer": "A period of mass executions by guillotine"
+  },
+  {
+    "text": "What was the motto of the French Revolution?",
+    "options": [
+      "Liberty, Equality, Fraternity",
+      "Life, Liberty, and the pursuit of Happiness",
+      "No taxation without representation",
+      "God save the King"
+    ],
+    "correctAnswer": "Liberty, Equality, Fraternity"
+  },
+  {
+    "text": "What device was famously used for executions during the revolution?",
+    "options": [
+      "The Guillotine",
+      "The Firing Squad",
+      "The Noose",
+      "The Electric Chair"
+    ],
+    "correctAnswer": "The Guillotine"
+  },
+  {
+    "text": "Which general rose to power at the end of the revolution?",
+    "options": [
+      "Napoleon Bonaparte",
+      "Maximilien Robespierre",
+      "Marquis de Lafayette",
+      "Georges Danton"
+    ],
+    "correctAnswer": "Napoleon Bonaparte"
+  },
+  {
+    "text": "French society was divided into three 'Estates'. Which Estate was the clergy?",
+    "options": [
+      "First Estate",
+      "Second Estate",
+      "Third Estate",
+      "Fourth Estate"
+    ],
+    "correctAnswer": "First Estate"
+  },
+  {
+    "text": "The Third Estate, representing the common people, formed a new government called...",
+    "options": [
+      "The National Assembly",
+      "The Parliament",
+      "The Congress",
+      "The Monarchy"
+    ],
+    "correctAnswer": "The National Assembly"
+  }
+]

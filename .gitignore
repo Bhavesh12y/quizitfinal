@@ -1,0 +1,4 @@
+node_modules/
+backend_mongo/node_modules/
+backend_mongo/.env
+*.env

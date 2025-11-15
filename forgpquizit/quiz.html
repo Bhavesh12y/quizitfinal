@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ-IT | Let's Play!</title> <link rel="stylesheet" href="quiz.css">
+    
+    <script src="quiz.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <span class="quiz-title">QUIZ-IT</span>
+        </div>
+        
+        <div class="quiz-top-row" id="quiz-main-content">
+            <span class="quiz-type" id="quiz-category-title">Loading Quiz...</span>
+            <span class="quiz-score" id="quiz-score-display">Score : 0</span>
+        </div>
+        
+        <div class="quiz-question-block" id="quiz-question-container">
+            <div class="quiz-question" id="quiz-question-text">Loading question...</div>
+            
+            <form class="quiz-options" id="quiz-options-form">
+                </form>
+        </div>
+        
+        <div class="quiz-bottom-row" id="quiz-bottom-bar">
+            <span class="quiz-progress" id="quiz-progress-text">Question 0 of 0</span>
+            <span class="quiz-timer" id="quiz-timer">Time: 10:00</span>
+        </div>
+        
+        <div class="quiz-action-row" id="quiz-action-buttons">
+            <button class="quiz-skip" type="button" id="skip-btn">Skip</button>
+            <button class="quiz-submit" type="button" id="submit-btn">Submit</button>
+        </div>
+        
+        <div id="results-container" style="display: none; text-align: center; margin-top: 20px;">
+            <h2 style="font-size: 2.5rem;">Quiz Complete!</h2>
+            <p style="font-size: 1.5rem; margin: 15px 0;">
+                Your Final Score: <span id="final-score">0</span> / <span id="total-questions">0</span>
+            </p>
+            <button class="quiz-submit" onclick="window.location.href='main.html'" style="margin: 5px;">Back to Home</button>
+            <button class="quiz-skip" onclick="window.location.href='leaderboard.html'" style="margin: 5px;">Leaderboard</button>
+        </div>
+        
+    </div>
+</body>
+</html>

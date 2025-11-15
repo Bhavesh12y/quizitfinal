@@ -1,0 +1,49 @@
+<!-- Example fetch calls to integrate into your existing frontend JS -->
+<script>
+async function signup(username, password, displayName){
+  const res = await fetch('/api/auth/signup', {
+    method:'POST',
+    headers:{ 'Content-Type':'application/json' },
+    body: JSON.stringify({ username, password, displayName })
+  });
+  return res.json();
+}
+
+async function signin(username, password){
+  const res = await fetch('/api/auth/signin', {
+    method:'POST',
+    headers:{ 'Content-Type':'application/json' },
+    body: JSON.stringify({ username, password })
+  });
+  return res.json();
+}
+
+async function submitAttempt(token, attempt){
+  const res = await fetch('/api/quiz/attempt', {
+    method:'POST',
+    headers:{ 
+      'Content-Type':'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    body: JSON.stringify(attempt)
+  });
+  return res.json();
+}
+
+async function getLeaderboard(){
+  const res = await fetch('/api/leaderboard/top?limit=10');
+  return res.json();
+}
+
+async function sendFeedback(token, message, rating){
+  const res = await fetch('/api/feedback', {
+    method:'POST',
+    headers:{ 
+      'Content-Type':'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    body: JSON.stringify({ message, rating })
+  });
+  return res.json();
+}
+</script>

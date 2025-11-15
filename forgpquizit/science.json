@@ -1,0 +1,102 @@
+[
+  {
+    "text": "What is the chemical symbol for water?",
+    "options": [
+      "H2",
+      "CO2",
+      "H2O",
+      "O2"
+    ],
+    "correctAnswer": "H2O"
+  },
+  {
+    "text": "What is the process by which plants make their own food?",
+    "options": [
+      "Fermentation",
+      "Photosynthesis",
+      "Respiration",
+      "Digestion"
+    ],
+    "correctAnswer": "Photosynthesis"
+  },
+  {
+    "text": "Which planet is closest to the sun?",
+    "options": [
+      "Mars",
+      "Earth",
+      "Mercury",
+      "Venus"
+    ],
+    "correctAnswer": "Mercury"
+  },
+  {
+    "text": "What force keeps us on the ground?",
+    "options": [
+      "Inertia",
+      "Magnetism",
+      "Gravity",
+      "Friction"
+    ],
+    "correctAnswer": "Gravity"
+  },
+  {
+    "text": "How many chambers does the human heart have?",
+    "options": [
+      "1",
+      "4",
+      "3",
+      "2"
+    ],
+    "correctAnswer": "4"
+  },
+  {
+    "text": "What is the chemical symbol for Gold?",
+    "options": [
+      "Gd",
+      "Ag",
+      "Au",
+      "Go"
+    ],
+    "correctAnswer": "Au"
+  },
+  {
+    "text": "What is the powerhouse of the cell?",
+    "options": [
+      "Nucleus",
+      "Mitochondria",
+      "Cell Membrane",
+      "Ribosome"
+    ],
+    "correctAnswer": "Mitochondria"
+  },
+  {
+    "text": "At what temperature (in Celsius) does water boil?",
+    "options": [
+      "100°C",
+      "212°C",
+      "50°C",
+      "0°C"
+    ],
+    "correctAnswer": "100°C"
+  },
+  {
+    "text": "What is the largest organ in the human body?",
+    "options": [
+      "Skin",
+      "Heart",
+      "Lungs",
+      "Liver"
+    ],
+    "correctAnswer": "Skin"
+  },
+  {
+    "text": "What gas do plants absorb from the atmosphere?",
+    "options": [
+      "Hydrogen (H2)",
+      "Carbon Dioxide (CO2)",
+      "Nitrogen (N2)",
+      "Oxygen (O2)"
+    ],
+    "correctAnswer": "Carbon Dioxide (CO2)"
+  }
+]

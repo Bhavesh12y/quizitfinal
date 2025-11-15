@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In - Quiz-IT</title>
+  <link rel="stylesheet" href="signin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Background image -->
+  <img src="quizitman.webp" alt="Background" class="body-bg-img">
+
+  <!-- Navbar -->
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo">QUIZ-IT</div>
+      <nav class="nav-menu">
+        <a href="#home">HOME</a>
+        <a href="#categories">EXPLORE</a>
+        <a href="#history">HISTORY</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#leaderboard">LEADERBOARD</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sign In Form -->
+  <section class="login-section">
+    <div class="login-container">
+      <div class="login-title">SIGN IN</div>
+
+      <form id="signupForm" class="signup-form">
+        <div class="login-fields">
+
+          <label>Full Name:</label>
+          <input type="text" id="fullname" placeholder="Enter full name">
+
+          <label>Username:</label>
+          <input type="text" id="username" placeholder="Enter username">
+
+          <label>Email:</label>
+          <input type="email" id="email" placeholder="Enter email">
+
+          <label>Password:</label>
+          <input type="password" id="password" placeholder="Enter password">
+
+        </div>
+
+        <div class="already">
+          Already a user? <a href="login.html">Log In</a>
+        </div>
+
+        <div class="login-btns">
+          <button type="button" class="login-btn" onclick="window.location.href='login.html'">Log In</button>
+          <button type="submit" class="login-btn">Sign In</button>
+        </div>
+
+        <div class="login-social">
+          Or SIGN IN with:
+          <img src="google.png" alt="Google">
+          <img src="github.png" alt="GitHub">
+          <img src="discord.png" alt="Discord">
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Signup Script (MUST BE AT BOTTOM) -->
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", async function(e){
+        e.preventDefault();
+
+        const displayName = document.getElementById("fullname").value.trim();
+        const username    = document.getElementById("username").value.trim();
+        const password    = document.getElementById("password").value;
+
+        if(!username || !password){
+            alert("Username and password are required!");
+            return;
+        }
+
+        try {
+          const res = await fetch("http://localhost:5000/api/auth/signup", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              username,
+              password,
+              displayName
+            })
+          });
+
+          const data = await res.json();
+
+          if (data.token) {
+            localStorage.setItem("token", data.token);
+            localStorage.setItem("user", JSON.stringify(data.user));
+
+            alert("Signup successful!");
+            window.location.href = "login.html";
+          } else {
+            alert(data.error || "Signup failed!");
+          }
+
+        } catch (err) {
+          console.error("Signup error:", err);
+          alert("Signup failed — server not reachable.");
+        }
+    });
+  </script>
+
+</body>
+</html>

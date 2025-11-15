@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">QUIZ-IT</div>
+        <nav class="nav-menu">
+            <a href="#login-section">HOME</a>
+            <a href="#login-section" class="explore-link">EXPLORE</a>
+            <a href="#login-section">HISTORY</a>
+            <a href="#login-section">ABOUT US</a>
+            <a href="#login-section">LEADERBOARD</a>
+        </nav>
+    </div>
+</header>
+
+<section class="login-section">
+    <div class="login-container">
+        <div class="login-title">LOGIN</div>
+
+        <form class="login-form" id="loginForm">
+            <div class="login-fields">
+                <div class="form">
+                    <label>Username:</label>
+                    <input id="username" type="text" placeholder="Enter username" id="username">
+
+                    <label>Password:</label>
+                    <input id="password" type="password" placeholder="Enter password" id="password">
+                </div>
+
+                <div class="imglog">
+                    <img src="quizitman.webp" alt="Hero" class="login-hero-img">
+                </div>
+            </div>
+
+            <div class="login-btns">
+                <button type="button" class="signin-btn" onclick="window.location.href='signin.html'">First time? Sign In</button>
+
+                <!-- LOGIN BUTTON SHOULD CALL signin() -->
+                <button type="submit" class="login-btn">LOG IN</button>
+            </div>
+
+            <div class="login-social">
+                Or LOG IN with :
+                <img src="google.png" alt="Google">
+                <img src="github.png" alt="GitHub">
+                <img src="discord.png" alt="Discord">
+            </div>
+
+            <span class="forgot-link">Forgot password ?</span>
+        </form>
+    </div>
+</section>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", async function(e){
+    e.preventDefault();
+
+    const u = document.getElementById('username').value;
+    const p = document.getElementById('password').value;
+
+    const res = await fetch('http://localhost:5000/api/auth/signin', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: u, password: p })
+    });
+
+    const data = await res.json();
+    
+    if (data.token) {
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('user', JSON.stringify(data.user));
+        alert("Login successful!");
+        window.location.href = 'main.html';
+    } else {
+        alert(data.error || "Login failed!");
+    }
+});
+</script>
+
+</body>
+</html>
