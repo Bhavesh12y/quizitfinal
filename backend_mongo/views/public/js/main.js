@@ -1,53 +1,49 @@
+// 🔥 Auto-detect API BASE URL (MOST IMPORTANT)
+const API_BASE =
+    window.location.hostname === "localhost"
+        ? "http://localhost:5000"
+        : "https://quizit-25r8.onrender.com";
 
+// ---------------------- SEARCH BAR ----------------------
 document.addEventListener('DOMContentLoaded', () => {
-    
-   
     const searchBar = document.getElementById('categorySearch');
     const categoryItems = document.querySelectorAll('.category-item');
 
-   
     searchBar.addEventListener('input', () => {
-      
         const searchTerm = searchBar.value.toLowerCase();
 
         categoryItems.forEach(item => {
-           
             const categoryName = item.querySelector('.category-name').textContent.toLowerCase();
-
-            
-            if (categoryName.includes(searchTerm)) {
-               
-                item.style.display = 'flex'; 
-            } else {
-                
-                item.style.display = 'none';
-            }
+            item.style.display = categoryName.includes(searchTerm) ? 'flex' : 'none';
         });
     });
 });
+
+// ---------------------- DASHBOARD LOAD ----------------------
 async function loadDashboard(){
     const user = JSON.parse(localStorage.getItem('user'));
     if(!user) return;
 
-    // Load leaderboard
-    const lb = await fetch('http://localhost:5000/api/leaderboard/top?limit=10');
+    // Leaderboard
+    const lb = await fetch(`${API_BASE}/api/leaderboard/top?limit=10`);
     const lbData = await lb.json();
     console.log("Leaderboard:", lbData);
 
-    // Load recent attempts
-    const ra = await fetch('http://localhost:5000/api/quiz/attempts/' + user.id);
+    // Recent attempts
+    const ra = await fetch(`${API_BASE}/api/quiz/attempts/${user.id}`);
     const raData = await ra.json();
     console.log("Recent Attempts:", raData);
 }
+
 loadDashboard();
 
-
+// ---------------------- RECENT QUIZZES ----------------------
 async function loadRecentQuizzes() {
     try {
         const user = JSON.parse(localStorage.getItem("user"));
         if (!user || !user.id) return;
 
-        const res = await fetch(`http://localhost:5000/api/quiz/attempts/${user.id}`);
+        const res = await fetch(`${API_BASE}/api/quiz/attempts/${user.id}`);
         const data = await res.json();
 
         console.log("Recent Quiz Data:", data);
@@ -62,16 +58,13 @@ async function loadRecentQuizzes() {
 
         data.forEach((attempt) => {
 
-            //⭐⭐ Correct field from database
             const rawDate = attempt.attemptedAt;   
             const dateObj = new Date(rawDate);
 
-            // formatted date
             const date = dateObj.toLocaleDateString("en-GB", {
                 day: "2-digit", month: "short", year: "2-digit"
             });
 
-            // formatted time
             const time = dateObj.toLocaleTimeString("en-GB", {
                 hour: "2-digit", minute: "2-digit"
             });
@@ -85,10 +78,9 @@ async function loadRecentQuizzes() {
                 <span>${date}</span>
                 <span>${time}</span>
                 <span>${category}</span>
-                <span>${score} <img src="trophy.png" class="quiz-trophy"></span>
+                <span>${score} <img src="/images/trophy.png" class="quiz-trophy"></span>
             `;
 
-            // Save attempt for report page
             btn.onclick = () => {
                 localStorage.setItem("reportAttempt", JSON.stringify(attempt));
                 window.location.href = "/report";
@@ -103,5 +95,3 @@ async function loadRecentQuizzes() {
 }
 
 loadRecentQuizzes();
-
-
