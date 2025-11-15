@@ -9,43 +9,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <%- include('partials/navbar') %>
+
     <div class="leaderboard-container">
+
         <div class="leaderboard-header">
-            <span class="leaderboard-title">QUIZ -IT</span>
+            <span class="leaderboard-title">QUIZ - IT</span>
         </div>
+
         <div class="leaderboard-main-title">LEADERBOARD</div>
-       
+
         <div class="leaderboard-content-flex">
+
             <div class="leaderboard-img-block">
-                <img src="/img/leaderboy.png" alt="Trophy Winner" class="leaderboard-img" style="width: 260px; height: auto;">
+                <img src="/img/leaderboy.png" class="leaderboard-img">
             </div>
+
             <div class="leaderboard-list-block">
-                <table class="leaderboard-table">
-                    <thead>
-                        <tr>
-                            <th>NAME</th>
-                            <th>REGION</th>
-                            <th>NO. OF QUIZ</th>
-                            <th>SCORE</th>
-                            <th>CATEGORY</th>
-                        </tr>
-                    </thead>
-                </table>
-                <div class="leaderboard-scroll-list">
-                    
-                    </div>
+
+                <!-- GRID HEADER -->
+                <div class="leaderboard-grid-header">
+                    <div>NAME</div>
+                    <div>REGION</div>
+                    <div>NO. OF QUIZ</div>
+                    <div>SCORE</div>
+                    <div>CATEGORY</div>
+                </div>
+
+                <!-- LEADERBOARD SCROLL LIST -->
+                <div class="leaderboard-scroll-list" id="leaderboardRows">
+                    <!-- rows added dynamically by leaderboard.js -->
+                </div>
+
                 <div class="leaderboard-actions">
                     <button class="leaderboard-home-btn" onclick="window.location.href='/'">Home</button>
                 </div>
+
             </div>
         </div>
 
         <footer class="leaderboard-footer">
-            <span class="footer-title">QUIZ IT :</span> ALL RIGHTS ARE RESERVED
+            <span class="footer-title">QUIZ IT :</span> ALL RIGHTS RESERVED
         </footer>
 
     </div>
+
     <%- include('partials/footer') %>
 
     <script src="/js/leaderboard.js"></script>

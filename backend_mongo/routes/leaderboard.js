@@ -8,38 +8,37 @@ router.get("/top", async (req, res) => {
     try {
         const top = await QuizAttempt.aggregate([
 
-            // Group by user to find best score & attempts
             {
                 $group: {
                     _id: "$userId",
+                    totalScore: { $sum: "$score" },
                     bestScore: { $max: "$score" },
                     quizCount: { $sum: 1 }
                 }
             },
 
-            // Lookup user details
             {
                 $lookup: {
-                    from: "users",           // collection name (lowercase plural)
-                    localField: "_id",       // userId
-                    foreignField: "_id",     // users._id
+                    from: "users",
+                    localField: "_id",
+                    foreignField: "_id",
                     as: "user"
                 }
             },
 
             { $unwind: "$user" },
 
-            // Format final output
             {
                 $project: {
                     username: "$user.username",
                     displayName: "$user.displayName",
+                    totalScore: 1,
                     bestScore: 1,
                     quizCount: 1
                 }
             },
 
-            { $sort: { bestScore: -1 } },
+            { $sort: { totalScore: -1 } },
             { $limit: 10 }
         ]);
 
