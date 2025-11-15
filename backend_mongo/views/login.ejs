@@ -63,27 +63,41 @@
 document.getElementById("loginForm").addEventListener("submit", async function(e){
     e.preventDefault();
 
-    const u = document.getElementById('username').value;
-    const p = document.getElementById('password').value;
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
 
-    const res = await fetch('http://localhost:5000/api/auth/signin', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username: u, password: p })
-    });
+    // Auto-detect LOCAL vs RENDER
+    const API_BASE =
+        window.location.hostname === "localhost"
+            ? "http://localhost:5000"
+            : "https://quizit-25r8.onrender.com";
 
-    const data = await res.json();
-    
-    if (data.token) {
-        localStorage.setItem('token', data.token);
-        localStorage.setItem('user', JSON.stringify(data.user));
-        alert("Login successful!");
-        window.location.href = '/';
-    } else {
-        alert(data.error || "Login failed!");
+    try {
+        const res = await fetch(`${API_BASE}/api/auth/signin`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password })
+        });
+
+        const data = await res.json();
+
+        if (data.token) {
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('user', JSON.stringify(data.user));
+
+            alert("Login successful!");
+            window.location.href = '/';
+        } else {
+            alert(data.error || "Login failed!");
+        }
+
+    } catch (err) {
+        console.error("Login error:", err);
+        alert("Server not reachable.");
     }
 });
 </script>
+
 
 </body>
 </html>
