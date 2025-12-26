@@ -1,12 +1,27 @@
+/* ===============================
+   THEME VARIABLES & FONTS 
+   (Techy/Hacker Vibe)
+   =============================== */
+:root {
+    --tech-black: #050505;       /* Deepest Black */
+    --tech-panel: #0f1115;       /* Slightly lighter for panels */
+    --neon-cyan: #00f3ff;        /* Cyberpunk Cyan */
+    --neon-glow: rgba(0, 243, 255, 0.4); 
+    --text-main: #e0e6ed;
+    --font-tech: 'Courier New', 'Roboto Mono', monospace; /* Code-like font */
+    --font-ui: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* ===== NAVBAR STYLES ===== */
 .navbar-custom {
-    background: #0e1830;
-    border-bottom: 3px solid #2eb3ff;
+    background: var(--tech-black);
+    /* Neon glow border at the bottom */
+    border-bottom: 1px solid var(--neon-cyan);
+    box-shadow: 0 4px 20px var(--neon-glow); 
     padding: 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
 }
 
 .navbar-container {
@@ -19,17 +34,21 @@
 }
 
 .navbar-logo {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: var(--font-tech);
     font-size: 1.8rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--neon-cyan);
     text-decoration: none;
-    letter-spacing: 1px;
-    transition: color 0.3s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* Text glow effect */
+    text-shadow: 0 0 8px var(--neon-glow);
+    transition: all 0.3s ease;
 }
 
 .navbar-logo:hover {
-    color: #2eb3ff;
+    color: #fff;
+    text-shadow: 0 0 15px var(--neon-cyan);
 }
 
 .navbar-menu {
@@ -39,19 +58,39 @@
 }
 
 .navbar-link {
-    color: #fff;
+    color: #8892b0; /* Muted tech gray */
     text-decoration: none;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s, border-bottom 0.3s;
-    padding: 16px 0;
+    font-family: var(--font-tech); /* Code font for links */
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    padding: 20px 0;
     border-bottom: 2px solid transparent;
+    position: relative;
 }
 
 .navbar-link:hover {
-    color: #2eb3ff;
-    border-bottom-color: #2eb3ff;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 5px var(--neon-glow);
+}
+
+/* Creating a "scanner" line effect on hover instead of a simple border */
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--neon-cyan);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 8px var(--neon-cyan);
+}
+
+.navbar-link:hover::after {
+    width: 100%;
 }
 
 /* ===== USER SECTION IN NAVBAR ===== */
@@ -62,98 +101,124 @@
 }
 
 .navbar-username {
-    color: #fff;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 0.95rem;
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 8px;
-    background: rgba(46, 179, 255, 0.1);
-    transition: background 0.3s, color 0.3s;
+    color: var(--neon-cyan);
+    font-family: var(--font-tech);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    border-radius: 4px; /* Sharper corners for tech look */
+    background: rgba(0, 243, 255, 0.05);
+    transition: all 0.3s;
+    cursor: default;
 }
 
 .navbar-username:hover {
-    background: rgba(46, 179, 255, 0.2);
-    color: #2eb3ff;
+    background: rgba(0, 243, 255, 0.15);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 10px var(--neon-glow);
 }
 
 .navbar-logout-btn {
-    background: #2d245c;
+    background: transparent;
     color: #fff;
-    border: 1px solid #2eb3ff;
-    border-radius: 8px;
-    padding: 8px 16px;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
+    border: 1px solid #ff3366; /* Red/Pink for logout/danger */
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-family: var(--font-tech);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
     cursor: pointer;
-    transition: background 0.3s, color 0.3s;
+    transition: all 0.3s;
+    letter-spacing: 1px;
 }
 
 .navbar-logout-btn:hover {
-    background: #4a90e2;
-    border-color: #4a90e2;
-    color: #fff;
+    background: #ff3366;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 51, 102, 0.6);
 }
 
 /* ===== FOOTER STYLES ===== */
 .footer-custom {
-    background: #0e1830;
-    border-top: 3px solid #2eb3ff;
-    padding: 20px 0;
+    background: var(--tech-black);
+    border-top: 1px solid var(--neon-cyan);
+    padding: 30px 0;
     margin-top: 40px;
-    box-shadow: 0 -4px 12px rgba(74, 144, 226, 0.15);
+    box-shadow: 0 -4px 20px rgba(0, 243, 255, 0.1);
 }
 
 .footer-container {
     max-width: 1400px;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1rem;
+    color: #8892b0;
+    font-family: var(--font-tech);
+    font-size: 0.9rem;
     letter-spacing: 1px;
 }
 
 .footer-title {
+    color: var(--neon-cyan);
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
 }
 
+/* ===== MOBILE RESPONSIVENESS ===== */
 @media (max-width: 768px) {
     .navbar-container {
         padding: 0 16px;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .navbar-logo {
         font-size: 1.4rem;
+        padding: 15px 0;
     }
 
     .navbar-menu {
-        gap: 16px;
+        gap: 0;
         order: 3;
         width: 100%;
-        margin-top: 12px;
+        flex-direction: column;
+        background: var(--tech-panel);
+        border-top: 1px solid #333;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    
+    /* You might need a JS toggle to add a class 'active' to show menu on mobile */
+    .navbar-menu.active {
+        max-height: 300px;
     }
 
     .navbar-link {
-        font-size: 0.9rem;
-        padding: 12px 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #222;
+    }
+
+    .navbar-link:hover {
+        background: rgba(0, 243, 255, 0.05);
     }
 
     .navbar-user {
-        gap: 8px;
+        gap: 10px;
     }
 
     .navbar-username {
-        font-size: 0.85rem;
-        padding: 6px 10px;
+        font-size: 0.75rem;
+        padding: 4px 8px;
     }
 
     .navbar-logout-btn {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+        font-size: 0.75rem;
+        padding: 4px 10px;
     }
 }
